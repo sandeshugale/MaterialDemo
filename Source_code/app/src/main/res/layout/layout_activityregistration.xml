@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/toplayout"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/diagonalview">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:orientation="horizontal"
+       android:layout_gravity="bottom"
+       android:gravity="center"
+       android:layout_marginBottom="10dp"
+       >
+       <ImageView
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:src="@drawable/facebook"/>
+       <ImageView
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:layout_marginLeft="20dp"
+           android:src="@drawable/facebook"/>
+   </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

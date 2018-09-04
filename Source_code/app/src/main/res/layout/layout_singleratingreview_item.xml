@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="2"
+            android:layout_margin="@dimen/SIZE_10"
+            android:orientation="vertical">
+            <com.p1024.convenientdetailer.CustomViews.RoundedImageView
+                android:id="@+id/customerimg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/place_holder"/>
+            <RatingBar
+                android:id="@+id/rtb_add_prof"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:isIndicator="true"
+                android:numStars="5" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/SIZE_10"
+            >
+            <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                android:id="@+id/customername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Name"
+                android:layout_weight="0.5"
+                android:textColor="@color/clr_black"
+                android:textSize="16sp"
+                />
+            <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                android:id="@+id/txtdescriptionrating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:layout_weight="1"
+                android:maxLines="3"
+                android:textColor="@color/clr_black"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

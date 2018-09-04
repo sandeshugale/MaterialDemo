@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/SIZE_2">
+
+
+    <LinearLayout
+        android:id="@+id/layout_calender_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <com.p1024.convenientdetailer.CustomViews.CustomTextView
+            android:id="@+id/txt_lsmad_date"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="18"
+            android:padding="10dp"
+            android:textColor="@color/clr_white"
+            android:textSize="14sp" />
+
+        <com.p1024.convenientdetailer.CustomViews.CustomTextView
+            android:id="@+id/txt_lsmad_day"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="sat"
+            android:visibility="visible"
+            android:textColor="#000000"
+            android:textSize="14sp"
+           />
+
+
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/SIZE_5"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/SIZE_5">
+
+            <ImageView
+                android:id="@+id/view_date"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/SIZE_10"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!--<FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/selector"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <com.spalth.CustomViewClasses.CustomTextView
+            android:id="@+id/txt_lsmad_date"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/SIZE_3"
+            android:gravity="center"
+            android:text="18"
+            android:textColor="@color/clr_white"
+            android:textSize="14sp" />
+    </FrameLayout>-->
+
+</LinearLayout>

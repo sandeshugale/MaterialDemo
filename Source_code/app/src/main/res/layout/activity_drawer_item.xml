@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rel_notify_dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/img_nav_item_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/SIZE_10"
+            />
+
+        <com.p1024.convenientdetailer.CustomViews.CustomTextView
+            android:id="@+id/txt_notify_cnt"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="@dimen/SIZE_5"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/clr_white"
+            android:textSize="@dimen/TEXT_SIZE_14"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <com.p1024.convenientdetailer.CustomViews.CustomTextView
+            android:id="@+id/tv_nav_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/SIZE_10"
+            android:layout_toRightOf="@+id/img_nav_item_menu"
+            android:text=""
+            android:textColor="@color/clr_white"
+            android:textSize="@dimen/TEXT_SIZE_16"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    <string name="WS_HOST_URL">http://192.168.2.188/p1124/</string>
+-->
+    <string name="WS_HOST_URL">http://182.72.79.154/p1124/</string>
+
+
+    <string name="WS_CUSTOMER_REGISTRATION">ws-customer-registration</string>
+    <string name="WS_DETAILER_REGISTRATION">ws-detailer-registration</string>
+    <string name="WS_SUPPLIER_REGISTRATION">ws-supplier-registration</string>
+    <string name="WS_SOCIAL_LOGIN">ws-social-login</string>
+    <string name="WS_SOCIAL_REGISTRATION">ws-social-registration</string>
+    <string name="WS_LOGIN">ws-login</string>
+    <string name="WS_FORGOT_PASSWORD">ws-forgot-password</string>
+    <string name="WS_GET_SERVICE_CATEGORY">ws-get-service-category</string>
+
+</resources>

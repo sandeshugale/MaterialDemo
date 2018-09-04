@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/SIZE_15"
+        android:layout_marginTop="@dimen/SIZE_10"
+        android:layout_marginLeft="@dimen/SIZE_15">
+        <com.p1024.convenientdetailer.CustomViews.CustomTextView
+            android:id="@+id/txtservicename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="services"
+            android:layout_marginRight="5dp"
+            android:padding="@dimen/SIZE_10"
+            android:background="@drawable/rectangledrawable"/>
+        <com.p1024.convenientdetailer.CustomViews.CustomTextView
+            android:id="@+id/serviceprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:padding="@dimen/SIZE_10"
+            android:layout_marginLeft="@dimen/SIZE_5"
+            android:layout_weight="1.5"
+            android:background="@drawable/rectangledrawable"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:layout_gravity="right">
+            <ImageView
+                android:id="@+id/imgdelete"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:layout_marginLeft="@dimen/SIZE_5"
+                android:src="@drawable/ic_rejected"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+   <!-- <com.p1024.convenientdetailer.CustomViews.CustomTextView
+        android:id="@+id/txtservicename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="servicename"
+        android:layout_weight="1"
+        />
+    <com.p1024.convenientdetailer.CustomViews.CustomTextView
+        android:id="@+id/serviceprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="price"
+        />-->
+</LinearLayout>

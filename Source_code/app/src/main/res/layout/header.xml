@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/SIZE_5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/SIZE_48"
+        android:elevation="@dimen/SIZE_5"
+        android:background="@color/colorPrimary"
+        >
+
+        <LinearLayout
+            android:id="@+id/lyt_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/img_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/SIZE_5"
+                android:src="@drawable/ic_menu"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/SIZE_10"
+                android:src="@drawable/ic_arrow_back"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <com.p1024.convenientdetailer.CustomViews.CustomTextView
+            android:id="@+id/txt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="Convenient Detailer App"
+            android:textAllCaps="true"
+            android:visibility="gone"
+            android:textColor="@color/clr_white"
+            android:textSize="@dimen/TEXT_SIZE_16"
+             />
+        <LinearLayout
+            android:id="@+id/maplayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/SIZE_10">
+            <ImageView
+                android:id="@+id/icsearch"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="@dimen/SIZE_10"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_ab_search"
+                android:layout_centerInParent="true"
+                android:layout_alignLeft="@id/icfilter"/>
+            <ImageView
+                android:id="@+id/icfilter"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_filter"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

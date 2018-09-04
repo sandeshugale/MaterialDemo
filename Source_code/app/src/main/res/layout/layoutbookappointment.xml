@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#80000000"
+    android:backgroundTintMode="src_over"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/SIZE_10"
+        android:orientation="vertical">
+
+
+        <com.p1024.convenientdetailer.CustomViews.CustomTextView
+            android:id="@+id/txt_custcurrentdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/clr_white"
+            android:textSize="20sp"
+            />
+
+        <com.p1024.convenientdetailer.CustomViews.CustomTextView
+            android:id="@+id/txt_custmsg_currdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="@color/clr_white"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/horizontal_recycler_view"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:divider="@null"
+            android:orientation="horizontal" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

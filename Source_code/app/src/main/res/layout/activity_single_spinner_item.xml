@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/linear_spinner"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.p1024.convenientdetailer.CustomViews.CustomTextView
+        android:id="@+id/txt_single_spinner_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/TEXT_SIZE_16"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/SIZE_5"
+        android:paddingTop="@dimen/SIZE_5"
+        android:paddingBottom="@dimen/SIZE_5"
+        android:text="name"
+        app:customFont="@string/font_avenir_medium"/>
+
+    <!--<com.helpmarket.CustomView.CustomCheckBox
+        android:id="@+id/chk_single_spinner_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/TEXT_SIZE_16"
+        android:padding="@dimen/SIZE_5"
+        android:button="@drawable/selector_check_box"
+        android:textColor="@color/CLR_ACTION_BAR"
+        app:customFont="@string/str_font_reg"/>-->
+
+</LinearLayout>

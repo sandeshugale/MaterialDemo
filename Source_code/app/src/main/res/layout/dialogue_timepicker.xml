@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear_update_act_ui">
+        <RelativeLayout
+            android:id="@+id/headerCommon"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            >
+           <com.p1024.convenientdetailer.CustomViews.CustomTextView
+               android:id="@+id/tv_title"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="TITLE"
+               android:gravity="center"
+               android:textSize="@dimen/TEXT_SIZE_15"
+               android:textColor="@color/clr_white"/>
+
+           <!-- <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text=""
+                android:id="@+id/text_message_header"
+                android:textColor="@color/white"
+                android:textSize="@dimen/TEXT_SIZE_18"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_10"
+                />
+-->
+            <ImageView
+                android:id="@+id/dlg_update_act_name_img_close"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:padding="@dimen/size_10"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+
+            <!--<ImageView
+                android:id="@+id/img_side_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/SIZE10"
+                android:padding="@dimen/SIZE10"
+                android:src="@drawable/burguer_menu" />-->
+
+
+
+            <!--    <ImageView
+                    android:id="@+id/img_edit_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/img_side_menu"
+                    android:padding="@dimen/size_10"
+                    android:src="@drawable/ic_camera"
+                    android:visibility="visible" />-->
+        </RelativeLayout>
+        <TimePicker
+            android:id="@+id/timepicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/SIZE_10"
+            android:timePickerMode="spinner"
+            android:layout_weight="1"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+            <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                android:id="@+id/tv_save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Save"
+                android:textSize="15sp"
+                android:textColor="@color/clr_white"
+                android:layout_weight="1"
+                android:gravity="center"/>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/clr_white"/>
+            <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                android:id="@+id/tv_cancle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cancle"
+                android:textColor="@color/clr_white"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

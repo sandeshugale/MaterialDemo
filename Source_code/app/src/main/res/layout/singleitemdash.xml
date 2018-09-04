@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <RelativeLayout
+     android:id="@+id/mbacklayout"
+     android:layout_width="match_parent"
+     android:layout_height="150dp"
+     android:layout_marginTop="@dimen/SIZE_10"
+     android:layout_marginLeft="@dimen/SIZE_10"
+     android:layout_marginRight="@dimen/SIZE_10"
+     android:background="@drawable/splash">
+  <ImageView
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_alignParentRight="true"
+      android:src="@drawable/ic_delete"
+      android:layout_margin="@dimen/SIZE_5"
+      />
+  <ImageView
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentBottom="true"
+      android:src="@drawable/ic_edit"
+      android:layout_margin="@dimen/SIZE_5"
+      />
+  <com.p1024.convenientdetailer.CustomViews.CustomTextView
+      android:id="@+id/txtserviceName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="ServiceName"
+      android:textSize="@dimen/TEXT_SIZE_20"
+      android:textColor="@color/white"
+      android:layout_centerInParent="true"/>
+ </RelativeLayout>
+</LinearLayout>

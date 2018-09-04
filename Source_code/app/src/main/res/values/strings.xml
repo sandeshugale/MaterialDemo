@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Convenient Detailer</string>
+
+    <string name="google_maps_key">AIzaSyB2u5FwiW2q3ufq4ay8V_dvtn3WZSVgD4Q</string>
+    <string-array name="str_arr_sign_up_for_free">
+        <item>Login</item>
+        <item>Customer Registration</item>
+        <item>AutoDetailer Registration</item>
+        <item>Supplier Registration</item>
+    </string-array>
+    <string name="facebook_app_id">180819359312282</string>
+    <string name="fb_login_protocol_scheme">fb180819359312282</string>
+    <string name="str_forgot_password">FORGOT PASSWORD</string>
+    <string name="forgot_password_hint">Enter E-mail</string>
+    <string name="str_send">Send</string>
+    <string name="str_forgotpassword_message">Enter your email address and we will email you a temporary password. </string>
+    <string name="str_username">Username</string>
+    <string name="str_email">Email</string>
+    <string name="str_password">Password</string>
+    <string name="str_confirm_password">Confirm Password</string>
+    <string name="str_register">Register</string>
+    <string name="str_signup">SIGN UP</string>
+    <string name="str_login">LOGIN</string>
+    <!--FONTS-->
+    <string name="font_avenir_medium">AvenirLTStd_Medium_0.otf</string>
+    <string name="font_avenir_light">AvenirLTStd_Light.otf</string>
+    <string name="font_avenir_roman">AvenirLTStd-Roman.otf</string>
+    <string name="font_avenir_aeh">AEH.ttf</string>
+    <string name="str_emailusername">Email</string>
+    <string name="str_network_error">Network Error</string>
+    <string name="str_server_error">Unable to connect server</string>
+    <string name="str_phonenumber">Mobile Number</string>
+    <!--CUSTOMER SIDE-MENU-->
+    <string-array name="str_customer">
+        <item>Dashboard</item>
+        <item>My Account</item>
+        <item>My Appointments</item>
+        <item>My Favourite</item>
+        <item>Payment History</item>
+        <item>My Notifications</item>
+        <item>My Messages</item>
+        <item>Logout</item>
+    </string-array>
+    <!--AUTO-DETAILER SIDE-MENU-->
+    <string-array name="str_detailer_or_autodetailer">
+        <item>Dashboard</item>
+        <item>My Account</item>
+        <item>My Appointments</item>
+        <item>My Rating and Reviews</item>
+        <item>My Availability</item>
+        <item>Payment History</item>
+        <item>My Notifications</item>
+        <item>Manage Appointment</item>
+        <item>Supplier</item>
+        <item>My Messages</item>
+        <item>Logout</item>
+    </string-array>
+    <!--AUTO-DETAILER SIDE-MENU-->
+
+    <string-array name="str_arr_supplier">
+        <item>Dashboard</item>
+        <item>My Account</item>
+        <item>My Notifications</item>
+        <item>Order History</item>
+        <item>Logout</item>
+    </string-array>
+    <string name="str_terms_text">I agree with the <b><u>Terms &amp; Conditions.</u></b></string>
+
+</resources>

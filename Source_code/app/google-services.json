@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "10965801356",
+    "project_id": "convenientdetailer-android"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10965801356:android:a07f5d4f24d41d51",
+        "android_client_info": {
+          "package_name": "com.p1024.convenientdetailer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "10965801356-cgr5fhdgp61696cgeb18hchamg740260.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.p1024.convenientdetailer",
+            "certificate_hash": "02a75a674df7d0e5c57370accee8562fd25963f0"
+          }
+        },
+        {
+          "client_id": "10965801356-sbjbg7b1s3d3kfuifrr53pgdc1ijrh98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl3t1hFwhdebXChouRhVlseM4IQlceYTs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

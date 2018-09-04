@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1">
+            <com.p1024.convenientdetailer.CustomViews.RoundedImageView
+                android:id="@+id/serviceimg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/SIZE_10"
+                android:src="@drawable/place_holder"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/SIZE_10"
+            >
+            <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                android:id="@+id/txtsname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service Name"
+                android:layout_weight="1"
+                android:textColor="@color/clr_black"
+                android:textSize="16sp"
+                />
+            <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                android:id="@+id/txtserviceprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service Price"
+                android:layout_weight="1"
+                android:textColor="@color/clr_black"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:layout_marginRight="10dp">
+            <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                android:id="@+id/txtbooknow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOOK NOW"
+                android:background="@drawable/buttondrawable"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

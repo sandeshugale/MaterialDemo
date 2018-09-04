@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/clr_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_update_act_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/headerCommon"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/colorPrimary">
+
+            <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="ADD SERVICE"
+                android:textColor="@color/clr_white"
+                android:textSize="20sp"
+                app:customFont="@string/font_avenir_aeh" />
+
+            <ImageView
+                android:id="@+id/imgdialogueclose"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/SIZE_10"
+                android:visibility="visible"
+                android:src="@drawable/ic_close_white"/>
+
+
+            <!--<ImageView
+                android:id="@+id/img_side_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/SIZE10"
+                android:padding="@dimen/SIZE10"
+                android:src="@drawable/burguer_menu" />-->
+
+            <!--    <ImageView
+                    android:id="@+id/img_edit_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/img_side_menu"
+                    android:padding="@dimen/size_10"
+                    android:src="@drawable/ic_camera"
+                    android:visibility="visible" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/SIZE_10"
+            android:layout_marginRight="@dimen/SIZE_10"
+            android:layout_marginTop="@dimen/SIZE_10"
+            android:layout_weight="1"
+            android:background="@drawable/rectangledrawable">
+
+            <Spinner
+                android:id="@+id/sp_addservice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingLeft="@dimen/SIZE_5"
+
+                android:textSize="16sp"></Spinner>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size_10"
+                android:src="@drawable/ic_expand_more_black_18dp" />
+        </RelativeLayout>
+
+        <com.p1024.convenientdetailer.CustomViews.CustomEditText
+            android:id="@+id/txt_servicename"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangledrawable"
+            android:hint="Service Name"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:singleLine="true"
+            app:customFont="@string/font_avenir_light" />
+
+        <com.p1024.convenientdetailer.CustomViews.CustomEditText
+            android:id="@+id/txt_serviceprice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangledrawable"
+            android:hint="Service Price"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="5dp"
+            android:singleLine="true"
+            app:customFont="@string/font_avenir_light" />
+
+        <com.p1024.convenientdetailer.CustomViews.CustomEditText
+            android:id="@+id/txt_servicedesc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangledrawable"
+            android:hint="Service Description"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:singleLine="true"
+            app:customFont="@string/font_avenir_light" />
+
+
+        <com.p1024.convenientdetailer.CustomViews.CustomTextView
+            android:id="@+id/txtsave"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/SIZE_10"
+            android:background="@drawable/buttondrawable"
+            android:gravity="center"
+            android:padding="@dimen/SIZE_8"
+            android:text="Save"
+            android:textColor="@color/clr_white"
+            android:textSize="@dimen/TEXT_SIZE_18"
+            app:customFont="@string/font_avenir_aeh" />
+    </LinearLayout>
+
+
+</LinearLayout>

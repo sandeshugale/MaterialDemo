@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/mapView"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </fragment>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mllSearchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="40dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/rectangledrawable"
+            android:hint="Search Location Here" />
+
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/SIZE_10"
+            android:layout_gravity="center"
+            android:padding="@dimen/SIZE_10"
+            android:background="@drawable/buttondrawable"
+            android:text="Search" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_top"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/SIZE_10">
+
+        <ImageView
+            android:id="@+id/image_gps_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_iner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/SIZE_65"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/SIZE_20"
+        android:paddingRight="@dimen/SIZE_20"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                android:id="@+id/txt_found_records"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:padding="@dimen/SIZE_5"
+                android:text="9 RECORDS FOUND"
+                android:textColor="@color/clr_white"
+                android:textSize="@dimen/TEXT_SIZE_18" />
+
+            <ImageView
+                android:id="@+id/img_up_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_layout_outer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/SIZE_180"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img_down_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                          />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/SIZE_40"
+                            android:layout_marginRight="@dimen/SIZE_40"
+                            android:layout_marginTop="@dimen/SIZE_10"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                                    android:id="@+id/txt_talents"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="Talents"
+                                    android:textColor="@color/clr_white"
+                                    android:textSize="@dimen/TEXT_SIZE_14"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:id="@+id/view_talent"
+                                    android:layout_width="80dp"
+                                    android:layout_height="@dimen/SIZE_1"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="@dimen/SIZE_5"
+                                    android:background="@color/clr_white"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                                    android:id="@+id/txt_jobs"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="Jobs"
+                                    android:textColor="@color/clr_white"
+                                    android:textSize="@dimen/TEXT_SIZE_14"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:id="@+id/view_job"
+                                    android:layout_width="80dp"
+                                    android:layout_height="@dimen/SIZE_1"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="@dimen/SIZE_5"
+                                    android:background="@color/clr_white"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                                    android:id="@+id/txt_peartrons"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="Peartrons"
+                                    android:textColor="@color/clr_white"
+                                    android:textSize="@dimen/TEXT_SIZE_14"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:id="@+id/view_peartron"
+                                    android:layout_width="80dp"
+                                    android:layout_height="@dimen/SIZE_1"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="@dimen/SIZE_5"
+                                    android:background="@color/clr_white"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                      <!--  <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/SIZE_20"
+                            android:layout_marginRight="@dimen/SIZE_20"
+                            android:layout_marginTop="@dimen/SIZE_20"
+                            android:focusable="false"
+                            app:cardCornerRadius="@dimen/SIZE_5"
+                            app:cardElevation="@dimen/SIZE_5">
+
+                            <com.example.ubuntu.rollingpair.CustomViews.CustomEditText
+                                android:id="@+id/edt_search_all"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/SIZE_15"
+                                android:layout_marginRight="@dimen/SIZE_40"
+                                android:background="@android:color/transparent"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:hint="Select Category"
+                                android:maxLines="1"
+                                android:paddingBottom="@dimen/SIZE_10"
+                                android:paddingRight="@dimen/SIZE_10"
+                                android:paddingTop="@dimen/SIZE_10"
+                                android:singleLine="true"
+                                android:textColorHint="@color/clr_light_blue"
+                                android:textSize="@dimen/TEXT_SIZE_16" />
+
+                            <ImageView
+                                android:id="@+id/img_search"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|center_vertical"
+                                android:layout_marginRight="@dimen/SIZE_10"
+                                android:src="@drawable/ic_icon__search_job" />
+                        </android.support.v7.widget.CardView>-->
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/SIZE_20"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/SIZE_10">
+
+                            <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Within"
+                                android:textColor="@color/clr_black"
+                                android:textSize="@dimen/TEXT_SIZE_14" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/SIZE_5"
+                                android:orientation="vertical">
+
+                                <com.p1024.convenientdetailer.CustomViews.CustomEditText
+                                    android:id="@+id/edt_select_miles"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:focusable="false"
+                                    android:gravity="center"
+                                    android:hint="Select Miles"
+                                    android:maxLines="1"
+                                    android:paddingLeft="@dimen/SIZE_5"
+                                    android:paddingRight="@dimen/SIZE_5"
+                                    android:singleLine="true"
+                                    android:textColorHint="@color/clr_black"
+                                    android:textSize="@dimen/TEXT_SIZE_15" />
+
+                                <!--  <View
+                                      android:layout_width="80dp"
+                                      android:layout_height="@dimen/SIZE_1"
+                                      android:background="@color/clr_white" />-->
+                            </LinearLayout>
+
+                            <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/SIZE_5"
+                                android:text="of"
+                                android:textColor="@color/clr_black"
+                                android:textSize="@dimen/TEXT_SIZE_14" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/SIZE_8"
+                                android:orientation="vertical">
+
+                                <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                                    android:id="@+id/txt_select_city"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="Select City"
+                                    android:textColor="@color/clr_white"
+                                    android:textSize="@dimen/TEXT_SIZE_15" />
+
+                                <View
+                                    android:layout_width="70dp"
+                                    android:layout_height="@dimen/SIZE_1"
+                                    android:background="@color/clr_white" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

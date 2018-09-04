@@ -1,0 +1,111 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="SIZE_0.5">0.5dp</dimen>
+    <dimen name="SIZE_1">1dp</dimen>
+    <dimen name="SIZE_2">2dp</dimen>
+    <dimen name="SIZE_3">3dp</dimen>
+    <dimen name="SIZE_4">4dp</dimen>
+    <dimen name="SIZE_5">5dp</dimen>
+    <dimen name="SIZE_6">6dp</dimen>
+    <dimen name="SIZE_7">7dp</dimen>
+    <dimen name="SIZE_8">8dp</dimen>
+    <dimen name="SIZE_9">9dp</dimen>
+    <dimen name="SIZE_10">10dp</dimen>
+    <dimen name="SIZE_11">11dp</dimen>
+    <dimen name="SIZE_12">12dp</dimen>
+    <dimen name="SIZE_13">13dp</dimen>
+    <dimen name="SIZE_14">14dp</dimen>
+    <dimen name="SIZE_15">15dp</dimen>
+    <dimen name="SIZE_16">16dp</dimen>
+    <dimen name="SIZE_17">17dp</dimen>
+    <dimen name="SIZE_18">18dp</dimen>
+    <dimen name="SIZE_19">19dp</dimen>
+    <dimen name="SIZE_20">20dp</dimen>
+    <dimen name="SIZE_21">21dp</dimen>
+    <dimen name="SIZE_22">22dp</dimen>
+    <dimen name="SIZE_23">23dp</dimen>
+    <dimen name="SIZE_24">24dp</dimen>
+    <dimen name="SIZE_25">25dp</dimen>
+    <dimen name="SIZE_30">30dp</dimen>
+    <dimen name="SIZE_35">35dp</dimen>
+    <dimen name="SIZE_40">40dp</dimen>
+    <dimen name="SIZE_48">48dp</dimen>
+    <dimen name="SIZE_50">50dp</dimen>
+    <dimen name="SIZE_60">60dp</dimen>
+    <dimen name="SIZE_70">70dp</dimen>
+    <dimen name="SIZE_75">75dp</dimen>
+    <dimen name="SIZE_80">80dp</dimen>
+    <dimen name="SIZE_85">85dp</dimen>
+    <dimen name="SIZE_90">90dp</dimen>
+    <dimen name="SIZE_95">95dp</dimen>
+    <dimen name="SIZE_100">100dp</dimen>
+    <dimen name="SIZE_120">120dp</dimen>
+    <dimen name="SIZE_130">130dp</dimen>
+    <dimen name="SIZE_150">150dp</dimen>
+    <dimen name="SIZE_180">180dp</dimen>
+    <dimen name="SIZE_200">200dp</dimen>
+    <dimen name="SIZE_320">320dp</dimen>
+    <dimen name="SIZE_400">400dp</dimen>
+
+    <!--Text Size Dimension List -->
+    <dimen name="TEXT_SIZE_10">10sp</dimen>
+    <dimen name="TEXT_SIZE_12">12sp</dimen>
+    <dimen name="TEXT_SIZE_14">14sp</dimen>
+    <dimen name="TEXT_SIZE_15">15sp</dimen>
+    <dimen name="TEXT_SIZE_16">16sp</dimen>
+    <dimen name="TEXT_SIZE_17">17sp</dimen>
+    <dimen name="TEXT_SIZE_18">18sp</dimen>
+    <dimen name="TEXT_SIZE_20">20sp</dimen>
+    <dimen name="TEXT_SIZE_22">22sp</dimen>
+    <dimen name="TEXT_SIZE_25">25sp</dimen>
+    <dimen name="TEXT_SIZE_26">26sp</dimen>
+    <dimen name="TEXT_SIZE_28">28sp</dimen>
+    <dimen name="TEXT_SIZE_30">30sp</dimen>
+    <dimen name="TEXT_SIZE_36">36sp</dimen>
+    <dimen name="TEXT_SIZE_40">40sp</dimen>
+    <dimen name="TEXT_SIZE_42">42sp</dimen>
+    <dimen name="TEXT_SIZE_48">48sp</dimen>
+
+
+    <!--Circular Progress Bar-->
+    <dimen name="default_stroke_width">7dp</dimen>
+    <dimen name="default_background_stroke_width">3dp</dimen>
+    <dimen name="SIZE_64">64dp</dimen>
+    <dimen name="SIZE_72">72dp</dimen>
+
+    <!--TOOLTIP-->
+    <dimen name="ttlm_default_padding">20dip</dimen>
+    <dimen name="ttlm_default_corner_radius">4dip</dimen>
+    <dimen name="ttlm_default_stroke_weight">0dip</dimen>
+    <dimen name="ttlm_default_elevation">2dp</dimen>
+    <dimen name="TEXT_SIZE_24">24sp</dimen>
+    <dimen name="SIZE_250">250dp</dimen>
+    <dimen name="SIZE_350">350dp</dimen>
+    <dimen name="SIZE_300">300dp</dimen>
+    <dimen name="SIZE_280">280dp</dimen>
+    <dimen name="SIZE_220">220dp</dimen>
+    <dimen name="SIZE_240">240dp</dimen>
+
+    <!--PICKER VIEW-->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!--paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <!--paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+    <dimen name="pickerview_textsize">18sp</dimen>
+    <dimen name="SIZE_110">110dp</dimen>
+    <dimen name="SIZE_58">58dp</dimen>
+    <dimen name="SIZE_28">28sp</dimen>
+    <dimen name="TEXT_SIZE_50">50sp</dimen>
+    <dimen name="SIZE_140">140dp</dimen>
+    <dimen name="SIZE_55">55dp</dimen>
+    <dimen name="SIZE_65">65dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="SIZE20">20dp</dimen>
+
+</resources>

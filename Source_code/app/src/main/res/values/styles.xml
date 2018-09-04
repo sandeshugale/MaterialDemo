@@ -1,0 +1,177 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"> <!--Theme.AppCompat.Light.DarkActionBar-->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/color_text_golden</item>
+       <!-- <item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <declare-styleable name="CustomView">
+        <attr name="customFont" format="string"></attr>
+        <attr name="setAlpha" format="boolean"></attr>
+    </declare-styleable>
+
+     <!--Textinputlayout theme-->
+
+    <style name="MyAppearance">
+        <item name="colorAccent">#A9A9AB</item>
+        <item name="android:textColorHint">#A9A9AB</item>
+        <item name="android:textSize">15sp</item>
+
+        <item name="colorControlNormal">#A9A9AB</item>
+        <item name="colorControlActivated">#A9A9AB</item>
+
+    </style>
+
+
+    <!--ALERT DIALOG THEME-->
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/clr_header</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@color/clr_black</item>
+        <!-- Used for the background -->
+        <item name="android:background">@color/clr_white</item>
+        <!--Animation-->
+        <!--<item name="android:windowEnterAnimation">@anim/enter_from_left</item>
+        <item name="android:windowExitAnimation">@anim/exit_to_right</item>-->
+    </style>
+
+    <style name="TransparentProgressDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="PopUpDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!--TOOLTIP-->
+    <style name="ToolTipLayoutDefaultStyle">
+        <item name="ttlm_padding">@dimen/ttlm_default_padding</item>
+        <item name="ttlm_strokeColor">@android:color/transparent</item>
+        <item name="ttlm_backgroundColor">@color/clr_red</item>
+        <item name="ttlm_strokeWeight">@dimen/ttlm_default_stroke_weight</item>
+        <item name="ttlm_cornerRadius">@dimen/ttlm_default_corner_radius</item>
+        <item name="ttlm_arrowRatio">1.4</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="ttlm_overlayStyle">@style/ToolTipOverlayDefaultStyle</item>
+        <item name="ttlm_elevation">@dimen/ttlm_default_elevation</item>
+        <item name="ttlm_textColor">@color/clr_white</item>
+    </style>
+
+    <style name="ToolTipOverlayDefaultStyle">
+        <item name="android:color">@color/clr_red</item>
+        <item name="ttlm_repeatCount">99</item>
+        <item name="ttlm_duration">600</item>
+        <item name="android:alpha">0.5</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">@color/clr_white</item>
+        <item name="ttlm_textColor">@color/clr_white</item>
+    </style>
+
+    <style name="ToolTipTextStyle">
+        <item name="android:textColor">@color/clr_white</item>
+    </style>
+
+    <!--<declare-styleable name="CircularImageView">
+
+        &lt;!&ndash; Specifies whether or not to draw a circular border around the image. &ndash;&gt;
+        <attr name="border" format="boolean"></attr>
+        &lt;!&ndash; Specifies the color of the border draw around the image. (if enabled) &ndash;&gt;
+        &lt;!&ndash; Makes the border this pixels wide. (if enabled) &ndash;&gt;
+        &lt;!&ndash; Specifies whether or not to draw a selector on this view upon touch events. &ndash;&gt;
+        <attr name="selector" format="boolean"></attr>
+        &lt;!&ndash; Specifies the color of the selector draw on top of the image upon touch events. (if enabled) &ndash;&gt;
+        <attr name="selector_color" format="color"></attr>
+        &lt;!&ndash; Specifies the color of the selector stroke drawn around the image upon touch events. Be sure to provide some opacity. (if enabled) &ndash;&gt;
+        <attr name="selector_stroke_color" format="color"></attr>
+        &lt;!&ndash; Makes the selector stroke drawn around the image upon touch events this pixels wide. (if enabled) &ndash;&gt;
+        <attr name="selector_stroke_width" format="dimension"></attr>
+        &lt;!&ndash; Specifies whether or not to draw a shadow around your circular image. &ndash;&gt;
+        <attr name="shadow" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomCircularImageViewTheme">
+        <attr name="circularImageViewStyle" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>-->
+
+    <declare-styleable name="SwipeListView">
+        <attr name="swipeOpenOnLongPress" format="boolean" />
+        <attr name="swipeAnimationTime" format="integer" />
+        <attr name="swipeOffsetLeft" format="dimension" />
+        <attr name="swipeOffsetRight" format="dimension" />
+        <attr name="swipeCloseAllItemsWhenMoveList" format="boolean" />
+        <attr name="swipeFrontView" format="reference" />
+        <attr name="swipeBackView" format="reference" />
+        <attr name="swipeMode" format="enum">
+            <enum name="none" value="0" />
+            <enum name="both" value="1" />
+            <enum name="right" value="2" />
+            <enum name="left" value="3" />
+        </attr>
+        <attr name="swipeActionLeft" format="enum">
+            <enum name="reveal" value="0" />
+            <enum name="dismiss" value="1" />
+        </attr>
+        <attr name="swipeActionRight" format="enum">
+            <enum name="reveal" value="0" />
+            <enum name="dismiss" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/clr_red</item>
+        <item name="colorControlActivated">@color/clr_red</item>
+    </style>
+
+    <style name="full_screen_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="PauseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fadein</item>
+        <item name="android:windowExitAnimation">@anim/fadeout</item>
+    </style>
+    <style name="MyRadioButtonStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/ic_chekboxrectngle</item>
+    </style>
+</resources>

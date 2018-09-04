@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@drawable/diagonalview"
+            >
+            <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_signup"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
+                app:customFont="@string/font_avenir_aeh"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                >
+                <ImageView
+                    android:id="@+id/imgdetailerfblogin"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_facebook_"/>
+                <ImageView
+                    android:id="@+id/imgdetailergoogleplus"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_google_plus"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/SIZE_10">
+            <LinearLayout
+                android:id="@+id/middlelayout"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/imgads"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <com.p1024.convenientdetailer.CustomViews.RoundedImageView
+                        android:id="@+id/img_profpic"
+                        android:layout_width="@dimen/SIZE_90"
+                        android:layout_height="@dimen/SIZE_90"
+                        android:src="@drawable/place_holder" />
+
+                    <ImageView
+                        android:id="@+id/img_add_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="#80000000"
+                        android:paddingTop="@dimen/SIZE_5"
+                        android:paddingBottom="@dimen/SIZE_5"
+                        android:src="@drawable/ic_camera" />
+                </RelativeLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    app:hintEnabled="true"
+                    app:hintTextAppearance="@style/MyAppearance">
+
+                    <com.p1024.convenientdetailer.CustomViews.CustomEditText
+                        android:id="@+id/edt_d_cmpnyname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:backgroundTint="#A9A9AB"
+                        android:hint="Company name"
+                        app:customFont="@string/font_avenir_medium"/>
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    app:hintEnabled="true"
+                    app:hintTextAppearance="@style/MyAppearance">
+
+                    <com.p1024.convenientdetailer.CustomViews.CustomEditText
+                        android:id="@+id/edt_d_website"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Website"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        app:customFont="@string/font_avenir_medium"
+                        android:gravity="center"/>
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    app:hintEnabled="true"
+                    android:visibility="gone"
+                    app:hintTextAppearance="@style/MyAppearance">
+
+                    <com.p1024.convenientdetailer.CustomViews.CustomEditText
+                        android:id="@+id/edt_d_phonenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        android:inputType="number"
+                        android:hint="@string/str_phonenumber"
+                        app:customFont="@string/font_avenir_light"/>
+
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    app:hintEnabled="true"
+                    app:hintTextAppearance="@style/MyAppearance">
+
+                    <com.p1024.convenientdetailer.CustomViews.CustomEditText
+                        android:id="@+id/edt_d_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/str_email"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        app:customFont="@string/font_avenir_medium"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    app:hintEnabled="true"
+                    app:hintTextAppearance="@style/MyAppearance">
+
+                    <com.p1024.convenientdetailer.CustomViews.CustomEditText
+                        android:id="@+id/edt_d_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:inputType="textPassword"
+                        android:hint="@string/str_password"
+                        app:customFont="@string/font_avenir_medium"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    app:hintEnabled="true"
+                    app:hintTextAppearance="@style/MyAppearance">
+
+                    <com.p1024.convenientdetailer.CustomViews.CustomEditText
+                        android:id="@+id/edt_d_confirmpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:inputType="textPassword"
+                        android:hint="@string/str_confirm_password"
+                        app:customFont="@string/font_avenir_medium"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Social Links"
+                    app:customFont="@string/font_avenir_aeh"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="10dp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    app:hintEnabled="true"
+                    app:hintTextAppearance="@style/MyAppearance">
+
+                    <com.p1024.convenientdetailer.CustomViews.CustomEditText
+                        android:id="@+id/edt_d_fb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="facebook link"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:drawableStart="@drawable/ic_fb"
+                        app:customFont="@string/font_avenir_medium"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    app:hintEnabled="true"
+                    app:hintTextAppearance="@style/MyAppearance">
+
+                    <com.p1024.convenientdetailer.CustomViews.CustomEditText
+                        android:id="@+id/edt_d_instalink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Instagram link"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        app:customFont="@string/font_avenir_medium"
+                        android:drawableStart="@drawable/ic_insta"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                </LinearLayout>
+            <!--image section layout-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/media_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/SIZE_10"
+                  >
+                    <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Upload Work Images"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="@dimen/SIZE_16"
+                        app:customFont="@string/font_avenir_aeh"
+                        android:layout_weight="6"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#A9A9AB"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal"
+                        >
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/ff"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardElevation="4dp"
+                            android:layout_weight="1.5"
+                            app:cardUseCompatPadding="true"
+                            >
+                        <ImageView
+                            android:id="@+id/img_addimage"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_plusgray"
+                            />
+                        </android.support.v7.widget.CardView>
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_weight="1"
+                            android:scrollbars="none"
+                            >
+                            <LinearLayout
+                                android:id="@+id/mainlayout"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!--video section-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/media_card"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="4dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                app:cardUseCompatPadding="true"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/SIZE_10"
+               >
+                <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Uploaded Video"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="@dimen/TEXT_SIZE_16"
+                    app:customFont="@string/font_avenir_aeh"
+                    android:layout_weight="2"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#A9A9AB"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:id="@+id/imguploadvideo"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                         android:layout_gravity="center"
+                        android:src="@drawable/ic_pictureimgblu"
+                        android:layout_weight="4"/>
+                    <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                        android:id="@+id/novideoselected"
+                        android:text="No File Selected"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/SIZE_10"
+                >
+                <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/SIZE_10"
+                    android:text="Opening and Closing Hours"
+                    android:gravity="center"
+                    android:textSize="@dimen/TEXT_SIZE_16"
+                    app:customFont="@string/font_avenir_aeh"
+                    />
+                <!--time picker-->
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        app:hintEnabled="true"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@style/MyAppearance">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/openingtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Opening Time"
+                            android:singleLine="true"
+                            app:customFont="@string/font_avenir_medium"
+                            android:focusableInTouchMode="false"
+                            android:imeOptions="actionNext"
+                            android:gravity="center"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        app:hintEnabled="true"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@style/MyAppearance">
+
+                        <android.support.design.widget.TextInputEditText
+                           android:id="@+id/closingtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Closing Time"
+                            android:singleLine="true"
+                            app:customFont="@string/font_avenir_medium"
+                            android:focusableInTouchMode="false"
+                            android:imeOptions="actionNext"
+                            android:gravity="center"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+           <!-- Profile information -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/SIZE_10"
+                >
+                <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Profile Information"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:padding="@dimen/SIZE_10"
+                    android:textStyle="bold"
+                    app:customFont="@string/font_avenir_aeh"
+                    android:layout_weight="6"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:layout_gravity="center"
+                    >
+                    <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Biographics"
+                        android:padding="@dimen/SIZE_10"
+                        android:textSize="@dimen/TEXT_SIZE_14"
+                        app:customFont="@string/font_avenir_aeh"
+                        android:gravity="center"/>
+                    <com.p1024.convenientdetailer.CustomViews.CustomEditText
+                        android:id="@+id/edt_d_aboutme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="about me"
+                        android:singleLine="true"
+                        app:customFont="@string/font_avenir_medium"
+                        android:gravity="center"/>
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        >
+                        <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Contact Info"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/TEXT_SIZE_14"
+                            android:visibility="gone"
+                            app:customFont="@string/font_avenir_aeh"
+                            android:padding="@dimen/SIZE_10"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="@dimen/SIZE_10">
+                            <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Contact No:"
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:layout_weight="2"/>
+                            <com.p1024.convenientdetailer.CustomViews.CustomEditText
+                                android:id="@+id/edt_d_contactinfo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:maxLength="15"
+                                android:layout_weight="1"
+                                app:customFont="@string/font_avenir_medium"
+                                android:hint=""
+                                />
+                        </LinearLayout>
+                        <RadioGroup
+                            android:id="@+id/radioGroup"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Address"
+                                android:id="@+id/rdaddress"
+                                android:checked="false"
+                                android:textSize="14sp"
+                                android:buttonTint="#0C3C60"/>
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:text="Mobile"
+                                android:id="@+id/rdmobile"
+                                android:checked="false"
+                                android:buttonTint="#0C3C60"
+                                android:textSize="14sp"
+                                />
+                        </RadioGroup>
+                        <LinearLayout
+                            android:id="@+id/addresslayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="@dimen/SIZE_10">
+                            <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Address:"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:layout_weight="2"/>
+                           <!-- <com.p1024.convenientdetailer.CustomViews.CustomEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint=""
+                                />-->
+                            <AutoCompleteTextView
+                                android:id="@+id/edt_d_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:layout_weight="1"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:paddingBottom="10dp"
+                                android:singleLine="true"
+                                android:textSize="16sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginTop="@dimen/SIZE_5"
+                 android:layout_marginRight="@dimen/SIZE_10">
+                 <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                     android:id="@+id/txtaddservice"
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:text="ADD SERVICES"
+                     android:textColor="#FFFFFF"
+                     android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                     android:layout_marginRight="@dimen/activity_horizontal_margin"
+                     android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:background="@drawable/buttondrawable"/>
+                 <LinearLayout
+                     android:visibility="gone"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal">
+                     <AutoCompleteTextView
+                         android:id="@+id/autocmpltservices"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:hint="services"
+                         android:layout_marginRight="5dp"
+                         android:padding="@dimen/SIZE_10"
+                         android:background="@drawable/rectangledrawable"/>
+                     <com.p1024.convenientdetailer.CustomViews.CustomEditText
+                         android:id="@+id/edtprices"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:hint="Price"
+                         android:padding="@dimen/SIZE_10"
+
+                         android:layout_weight="1"
+                         android:background="@drawable/rectangledrawable"
+                         />
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1.4">
+                         <ImageView
+                             android:id="@+id/imgaddservices"
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             android:src="@drawable/facebook"/>
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <com.p1024.convenientdetailer.CustomViews.ExpandableHeightListView
+                     android:id="@+id/serviceslist"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:divider="@null">
+
+                 </com.p1024.convenientdetailer.CustomViews.ExpandableHeightListView>
+             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+                <CheckBox
+                    android:id="@+id/chktermscondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MyRadioButtonStyle"
+                    android:layout_weight="6"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                        android:id="@+id/txttermscondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#A9A9AB"
+                        android:paddingLeft="@dimen/size_10"
+                        android:textSize="@dimen/TEXT_SIZE_14"
+                        app:customFont="@string/font_avenir_medium"
+                        android:text="@string/str_terms_text"/>
+                    <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                        android:id="@+id/txttermscondition1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#A9A9AB"
+                        android:paddingLeft="@dimen/size_10"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/TEXT_SIZE_14"
+                        app:customFont="@string/font_avenir_medium"
+                        android:text="of the Convenient Detail"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <com.p1024.convenientdetailer.CustomViews.CustomTextView
+                android:id="@+id/txt_d_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttondrawable"
+                android:padding="10dp"
+                android:text="@string/str_signup"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
